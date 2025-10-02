@@ -7,6 +7,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import NotFound from "./components/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollUp from "./components/ScrollUp";
+import GalleryPage from "./pages/GalleryPage";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/course-detail/:id" element={<BlogDetailPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog-detail/:id" element={<BlogDetailPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="*" element={<NotFound />} />
