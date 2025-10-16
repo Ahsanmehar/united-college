@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import ScrollUp from "./components/ScrollUp";
 import CoursesPage from "./pages/CoursesPage";
 import FacultyDetail from "./pages/CoursesDetailPage/FacultyDetail";
+import GalleryPage from "./pages/GalleryPage";
 const App = () => {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/blog-detail/:id" element={<BlogDetailPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       <ScrollUp />
