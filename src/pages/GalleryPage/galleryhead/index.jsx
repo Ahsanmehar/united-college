@@ -1,6 +1,6 @@
 import React from "react";
 import gallery_images from "@/assets/images/Gallery";
-import Breadcrumb from "@/components/Breadcrumb";
+import Breadcrumb from "@/components/BreadCrumb";
 
 export default function GalleryHead() {
   return (
