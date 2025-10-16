@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes as RouterRoutes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
 import AboutPage from "./pages/AboutPage";
@@ -14,7 +13,7 @@ const App = () => {
     <BrowserRouter>
       <ScrollToTop />
       <RouterRoutes>
-        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/" element={<HomePage />} /> */}
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/course-detail/:id" element={<BlogDetailPage />} />
         <Route path="/faculty/:id" element={<FacultyDetail />} />
