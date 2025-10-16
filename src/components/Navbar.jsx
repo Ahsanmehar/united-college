@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Q from "@/Components/Q";
+import Q from "@/components/Q";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

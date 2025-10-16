@@ -1,7 +1,7 @@
 //src/pages/BlogDetailPage/BlogDetailHead/index.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import Q from "@/Components/Q";
+import Q from "@/components/Q";
 import Breadcrumb from "@/components/Breadcrumb";
 import blog_pic from "@/assets/images/blog/blog_pic.webp";
 

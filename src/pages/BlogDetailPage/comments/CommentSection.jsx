@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import Q from "@/Components/Q";
+import Q from "@/components/Q";
 
 export default function CommentSection({ blogId }) {
   const [comments, setComments] = useState([]);

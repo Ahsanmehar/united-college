@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import Q from "@/Components/Q";
+import Q from "@/components/Q";
 
 export function RelatedCourses({ relatedPosts }) {
   if (!relatedPosts || relatedPosts.length === 0) {

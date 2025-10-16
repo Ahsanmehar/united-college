@@ -1,6 +1,6 @@
 // src/pages/homepage/content/index.jsx
 import React from "react";
-import Q from "@/Components/Q";
+import Q from "@/components/Q";
 
 // Importing images
 import content_pic1 from "@/assets/images/home/content_pic1.webp";

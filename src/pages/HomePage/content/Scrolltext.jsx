@@ -1,6 +1,6 @@
 // src/pages/homepage/content/Scrolltext.jsx
 import React from "react";
-import Q from "@/Components/Q";
+import Q from "@/components/Q";
 
 export default function Scrolltext() {
   return (

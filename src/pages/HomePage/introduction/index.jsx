@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Q from "@/Components/Q";
+import Q from "@/components/Q";
 import uctlogo from "@/assets/images/home/uctlogo.webp";
 import introVideoThumbnail from "@/assets/images/home/introVideoThumbnail.webp";
 
