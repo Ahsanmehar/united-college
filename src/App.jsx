@@ -7,10 +7,13 @@ import ContactUsPage from "./pages/ContactUsPage";
 import NotFound from "./components/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollUp from "./components/ScrollUp";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <ScrollToTop />
       <RouterRoutes>
         <Route path="/" element={<HomePage />} />
@@ -23,6 +26,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       <ScrollUp />
+      <Footer />
     </BrowserRouter>
   );
 };

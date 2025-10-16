@@ -1,61 +1,90 @@
 import { Link } from "react-router-dom";
 import TechIcon from "./TechIcon";
 
-const Breadcrumb = ({ pageName, description, detailPage, url }) => {
+const Breadcrumb = ({
+  pageName,
+  description,
+  detailPage,
+  url,
+  showHeader = true,
+  backgroundImage = null,
+  overlay = true,
+}) => {
   return (
-    <section className="relative z-10 overflow-hidden pt-28 lg:pt-[150px]">
-      <div className="container">
-        <div className="flex flex-wrap items-center">
-          <div className="w-full md:w-8/12 lg:w-7/12">
-            <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
-              <h1 className="mb-5 text-2xl font-semibold text-black sm:text-3xl">
-                {detailPage ? detailPage : pageName}
-              </h1>
-              <p className="font-medium leading-relaxed text-text">
-                {description}
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-4/12 lg:w-5/12">
-            <div className="text-end">
-              <ul className="flex items-center md:justify-end">
-                <li className="flex items-center">
-                  <Link
-                    to="/"
-                    className="flex items-center gap-1 pr-1 font-medium text-text group"
-                  >
-                    <TechIcon
-                      name="house"
-                      className="w-5 h-5 text-text group-hover:text-secondary"
-                    />
-                    <span className="group-hover:text-secondary">
-                      Home
-                    </span>
-                  </Link>
+    <section
+      className="relative z-10 overflow-hidden"
+      style={
+        backgroundImage
+          ? {
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }
+          : {}
+      }
+    >
+      {backgroundImage && overlay && (
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/75 to-secondary/50 z-0" />
+      )}
 
-                  <span className="mx-2 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-text"></span>
-                </li>
-                <li className="flex items-center">
-                  <Link
-                    to={url}
-                    className={`pr-1 font-medium ${
-                      detailPage
-                        ? "hover:text-secondary"
-                        : "text-secondary"
-                    }`}
-                  >
-                    {pageName}
-                  </Link>
-                  {detailPage && (
-                    <span className="mx-2 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-text"></span>
-                  )}
-                </li>
-                {detailPage && (
-                  <li className="text-base font-medium text-secondary whitespace-nowrap">
-                    {detailPage}
+      <div className="container relative z-10 h-full">
+        <div className="flex flex-col h-[500px] justify-end pb-10">
+          <div className="flex flex-wrap justify-between items-end w-full">
+            {showHeader && (
+              <div className="w-full lg:w-7/12">
+                <div className="max-w-[600px]">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 bg-gradient-to-r from-white via-secondary to-white bg-clip-text text-transparent drop-shadow-lg leading-tight">
+                    {detailPage ? detailPage : pageName}
+                  </h1>
+                  <p className="text-base md:text-lg text-gray-200 max-w-[500px] leading-relaxed">
+                    {description}
+                  </p>
+                </div>
+              </div>
+            )}
+            <div className={`w-full ${showHeader ? "lg:w-5/12" : "w-full"}`}>
+              <div className={`${showHeader ? "text-right " : "text-left"}`}>
+                <ul
+                  className={`flex items-center ${
+                    showHeader ? "justify-end" : "justify-start"
+                  } flex-wrap gap-2`}
+                >
+                  <li className="flex items-center">
+                    <Link
+                      to="/"
+                      className="flex items-center gap-2 pr-2 font-medium text-white group hover:text-secondary transition-colors"
+                    >
+                      <TechIcon
+                        name="house"
+                        className="w-5 h-5 text-white group-hover:text-secondary transition-colors"
+                      />
+                      <span>Home</span>
+                    </Link>
+                    <span className="mx-1 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-white"></span>
                   </li>
-                )}
-              </ul>
+                  <li className="flex items-center">
+                    <Link
+                      to={url}
+                      className={`pr-2 font-medium ${
+                        detailPage
+                          ? "text-white hover:text-secondary"
+                          : "text-secondary"
+                      } transition-colors`}
+                    >
+                      {pageName}
+                    </Link>
+                    {detailPage && (
+                      <span className="mx-1 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-white"></span>
+                    )}
+                  </li>
+                  {detailPage && (
+                    <li className="text-base font-medium text-secondary whitespace-nowrap">
+                      {detailPage}
+                    </li>
+                  )}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

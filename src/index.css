@@ -8,6 +8,25 @@ body {
   background-color: white;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: inline-block;
+  min-width: 100%;
+  animation: scroll 35s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
 @theme {
   --color-primary: #0d4d9b; /* blue */
   --color-secondary: #5cc5ac; /* button*/
