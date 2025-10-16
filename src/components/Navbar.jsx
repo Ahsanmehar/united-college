@@ -5,7 +5,7 @@ import Q from "@/components/Q";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="fixed top-0 left-0 w-full z-20 bg-primary/70 backdrop-blur-md border-b border-white/20">
+    <header className="fixed top-0 left-0 w-full z-30 bg-primary/70 backdrop-blur-md border-b border-white/20">
       <div className="container flex items-center justify-between py-4">
         {/* Logo + Text */}
         <Link to="/" className="flex items-center gap-2">

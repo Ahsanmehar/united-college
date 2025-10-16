@@ -5,7 +5,7 @@ const Breadcrumb = ({
   description,
   detailPage,
   url,
-  showHeader = true,
+  showHeader = false,
   backgroundImage = null,
   overlay = true,
 }) => {
@@ -42,8 +42,8 @@ const Breadcrumb = ({
                 </div>
               </div>
             )}
-            <div className={`w-full ${showHeader ? "lg:w-5/12" : "w-full"}`}>
-              <div className={`${showHeader ? "text-right " : "text-left"}`}>
+            <div className={`w-full`}>
+              <div >
                 <ul
                   className={`flex items-center ${
                     showHeader ? "justify-end" : "justify-start"
