@@ -12,6 +12,7 @@ import GalleryPage from "./pages/GalleryPage";
 const App = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <ScrollToTop />
       <RouterRoutes>
         {/* <Route path="/" element={<HomePage />} /> */}
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       <ScrollUp />
+      <Footer />
     </BrowserRouter>
   );
 };
