@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import TechIcon from "./TechIcon";
 
 const Breadcrumb = ({
   pageName,
@@ -55,10 +54,7 @@ const Breadcrumb = ({
                       to="/"
                       className="flex items-center gap-2 pr-2 font-medium text-white group hover:text-secondary transition-colors"
                     >
-                      <TechIcon
-                        name="house"
-                        className="w-5 h-5 text-white group-hover:text-secondary transition-colors"
-                      />
+                     
                       <span>Home</span>
                     </Link>
                     <span className="mx-1 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-white"></span>

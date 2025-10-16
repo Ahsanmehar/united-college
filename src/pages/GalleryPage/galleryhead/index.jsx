@@ -23,7 +23,7 @@ export default function GalleryHead() {
             </div>
 
             <div className="mt-4 md:mt-0">
-              <Breadcrumb currentPage="Blogs" className="text-white" />
+              <Breadcrumb currentPage="Blogs" className="text-white" /> 
             </div>
           </div>
         </div>

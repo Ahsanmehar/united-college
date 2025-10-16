@@ -9,13 +9,16 @@ import ScrollUp from "./components/ScrollUp";
 import CoursesPage from "./pages/CoursesPage";
 import FacultyDetail from "./pages/CoursesDetailPage/FacultyDetail";
 import GalleryPage from "./pages/GalleryPage";
+import HomePage from "./pages/HomePage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <ScrollToTop />
       <RouterRoutes>
-        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/" element={<HomePage />} />
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/course-detail/:id" element={<BlogDetailPage />} />
         <Route path="/faculty/:id" element={<FacultyDetail />} />

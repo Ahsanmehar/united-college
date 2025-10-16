@@ -1,9 +1,9 @@
-import { House, TypeOutline } from "lucide-react";
+import { House, MoveLeft } from "lucide-react";
 
 const TechIcon = ({ name, className = "" }) => {
   const icons = {
     house: <House className={className} />,
-    "type-outline": <TypeOutline className={className} />,
+    "move-left": <MoveLeft className={className} />,
   };
 
   return icons[name.toLowerCase()] || <span className={className}>{name}</span>;
