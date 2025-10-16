@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import Q from "@/Components/Q";
-import { Facebook, Linkedin, Youtube } from "lucide-react";
+import Q from "@/components/Q";
 
 export default function Footer() {
   return (

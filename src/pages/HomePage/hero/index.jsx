@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import hero_background from "@/assets/images/home/hero_background.webp"; // make sure file exists
-import Navbar from "@/components/Navbar";
 
 export default function Hero() {
   return (

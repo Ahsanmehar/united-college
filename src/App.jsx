@@ -12,6 +12,7 @@ import GalleryPage from "./pages/GalleryPage";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
 const App = () => {
   return (
     <BrowserRouter>
