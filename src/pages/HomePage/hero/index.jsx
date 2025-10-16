@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import hero_background from "@/assets/images/home/hero_background.webp"; // make sure file exists
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -19,14 +20,15 @@ export default function Hero() {
         <p className="max-w-2xl text-lg md:text-xl mb-8 tracking-wide leading-relaxed">
           Learn at United College of Technology
         </p>
-
-        <Button
-          className="shadow-btn-hover hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/50"
-          variant="default"
-          size="lg"
-        >
-          Explore Courses
-        </Button>
+        <Link to="/courses">
+          <Button
+            className="shadow-btn-hover hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/50"
+            variant="default"
+            size="lg"
+          >
+            Explore Courses
+          </Button>
+        </Link>
       </div>
     </section>
   );

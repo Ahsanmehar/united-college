@@ -61,6 +61,7 @@ export default function Footer() {
                 { name: "About Us", link: "/about" },
                 { name: "Courses", link: "/courses" },
                 { name: "Blog", link: "/blog" },
+                { name: "Gallery", link: "/gallery" },
                 { name: "Contact Us", link: "/contact-us" },
               ].map((item, i) => (
                 <li key={i}>

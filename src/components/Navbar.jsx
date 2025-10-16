@@ -38,6 +38,9 @@ export default function Navbar() {
           <Link to="/blog" className="hover:text-secondary">
             Blog
           </Link>
+          <Link to="/gallery" className="hover:text-secondary">
+            Gallery{" "}
+          </Link>
           <Link to="/contact-us" className="hover:text-secondary">
             Contact Us
           </Link>
@@ -85,6 +88,13 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               Blog
+            </Link>
+            <Link
+              to="/gallery"
+              className="hover:text-secondary"
+              onClick={() => setIsOpen(false)}
+            >
+              Gallery{" "}
             </Link>
             <Link
               to="/contact-us"

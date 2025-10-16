@@ -36,7 +36,7 @@ export default function AboutPage() {
 
       {/* Navigation Links */}
       <div className="mt-6">
-        <div className="container mx-auto flex justify-center gap-10 py-4 text-primary">
+        <div className="container mx-auto flex flex-wrap justify-center gap-10 py-4 text-primary">
           <a href="#about" className="hover:text-secondary font-semibold">About</a>
           <a href="#ceo" className="hover:text-secondary font-semibold">CEO Philosophy</a>
           <a href="#vision" className="hover:text-secondary font-semibold">Our Vision</a>
