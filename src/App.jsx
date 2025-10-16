@@ -7,16 +7,19 @@ import ContactUsPage from "./pages/ContactUsPage";
 import NotFound from "./components/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollUp from "./components/ScrollUp";
-
+import CoursesPage from "./pages/CoursesPage";
+import FacultyDetail from "./pages/CoursesDetailPage/FacultyDetail";
 const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <RouterRoutes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/courses" element={<BlogPage />} />
+        <Route path="/courses" element={<CoursesPage />} />
         <Route path="/course-detail/:id" element={<BlogDetailPage />} />
-        <Route path="/blog" element={<BlogPage />} />
+         <Route path="/faculty/:id" element={<FacultyDetail />} /> 
+<Route path="/faculty/:facultyId/school/:schoolId" element={<FacultyDetail />} />   
+     <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog-detail/:id" element={<BlogDetailPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
