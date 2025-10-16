@@ -1,9 +1,9 @@
-import { Button } from "@/Components/ui/button";
-import BreadCrumb from "../../Components/BreadCrumb";
-import { Input } from "@/Components/ui/input";
+import { Button } from "@/components/ui/button";
+import BreadCrumb from "../../components/BreadCrumb";
+import { Input } from "@/components/ui/input";
 import Hero from "./hero";
-import TechIcon from "@/Components/TechIcon";
-import { Textarea } from "@/Components/ui/textarea";
+import TechIcon from "@/components/TechIcon";
+import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 
 export default function HomePage() {
@@ -13,10 +13,10 @@ export default function HomePage() {
       <BreadCrumb
         pageName="Programs"
         description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci rem ipsam modi aliquam"
-        url="/program"
+        url="/prgram"
       />
-      <main className="text-gray/50 text-2xl font-bold">
-        <Button className="w-[500px] mb-10" variant="default" size="sm">
+      <main className="bg-primary/50 text-2xl font-bold">
+        <Button className="w-[500px] mb-10 !h-20" variant="default" size="lg">
           <TechIcon name="clock" />
           Learn More about it
         </Button>
